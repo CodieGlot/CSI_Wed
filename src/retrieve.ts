@@ -1,7 +1,7 @@
 import { ListNode } from "./root";
 import { nodeA, nodeB, nodeC, nodeD, nodeE } from "./root";
 
-function retrieveNode(num: number) {
+function retrieveNode(num: number): ListNode | null {
   let node: ListNode | null = new ListNode();
   Object.assign(node, nodeA);
   while (node && node.val !== num) node = node.next;
